@@ -22,8 +22,6 @@ class Navigation extends Component {
         const circle = {
             padding: '0px',
             position: 'fixed',
-            top: '50px',
-            right: '50px',
             display: 'flex',
             alignItem: 'center',
             justifyContent: 'center',
@@ -44,7 +42,7 @@ class Navigation extends Component {
                 <div className="App-header">
                     <Link to="/"><img src={logo} className="App-logo" alt="logo"/></Link>
                 </div>
-                <div style={circle}>
+                <div className="Nav-circle" style={circle}>
                     <div className={modalVisibility ? 'open' : ''} id="nav-icon" onClick={this.handleClick}>
                         <span></span>
                         <span></span>

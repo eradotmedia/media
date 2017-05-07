@@ -29,7 +29,7 @@ class ThreeColumn extends Component {
         }
 
         const col = {
-            height: '450px',
+            height: '400px',
             margin: 'inherit',
             padding: 'inherit',
         }

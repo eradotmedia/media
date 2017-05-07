@@ -21,24 +21,20 @@ class TwoColumn extends Component {
             width: '100%',
         }
 
-        const colOne = {
+        const col = {
             backgroundColor: '#ED1C7F',
             color: '#fff',
-            height: '450px',
-        }
-
-        const colTwo = {
-            height: '450px',
-            padding: '0',
+            height: '400px',
+            padding: '0px',
         }
 
         return (
             <div className="container" style={container}>
                 <div className="row" >
-                    <div className="col-xs-12 col-md-5 col-lg-4" style={colOne}>
+                    <div className="col-xs-12 col-md-5 col-lg-4" style={col}>
                         <QouteColumn />
                     </div>
-                    <div className="col-xs-12 col-md-7 col-lg-8" style={colTwo}>
+                    <div className="col-xs-12 col-md-7 col-lg-8" style={col}>
                         <ProjectColumn data={this.state.project} />
                     </div>
                 </div>

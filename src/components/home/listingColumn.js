@@ -11,36 +11,41 @@ class ListingColumn extends Component {
             height: 'inherit',
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'flex-end',
-            alignContent: 'flex-end',
+            justifyContent: 'center',
         }
 
         const row = {
-            padding: '25px',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            width: '90%',
+            padding: '10px',
         }
 
         const col = {
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'flex-start',
+            justifyContent: 'space-around',
             alignContent: 'center',
-            margin: '20px',
-            padding: '30px',
+            margin: '15px auto',
+            padding: '20px',
             color: '#fff',
             textAlign: 'left',
         }
 
         const paragraph = {
             fontFamily: 'Texta Heavy',
+            letterSpacing: '1px',
             fontStyle: 'Italic',
-            fontSize: '2.1em',
+            fontSize: '2.0em',
         }
 
         const link = {
             fontFamily: 'Agaramond Bold',
+            letterSpacing: '1px',
             fontStyle: 'italic',
             color: 'white',
-            fontSize: '2.0em',
+            fontSize: '1.8em',
             lineHeight: '1.0em',
         }
 

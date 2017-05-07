@@ -21,18 +21,21 @@ class QouteColumn extends Component {
             height: 'inherit',
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'flex-end',
-            alignContent: 'flex-end',
+            justifyContent: 'center',
         }
 
         const row = {
-            padding: '20px',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            width: '90%',
+            padding: '10px',
         }
 
         const col = {
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'flex-start',
+            justifyContent: 'space-around',
             alignContent: 'center',
             margin: '15px auto',
             padding: '20px',
@@ -42,14 +45,15 @@ class QouteColumn extends Component {
 
         const qoute = {
             fontFamily: 'Texta Heavy',
+            letterSpacing: '1px',
             fontStyle: 'Italic',
-            fontSize: '3.2em',
+            fontSize: '2.6em',
         }
 
         const name = {
             fontFamily: 'Texta Heavy',
             fontStyle: 'Italic',
-            fontSize: '2.5em',
+            fontSize: '2.0em',
             color: '#0A2037',
         }
 
@@ -57,17 +61,24 @@ class QouteColumn extends Component {
             fontFamily: 'Texta Light',
             fontStyle: 'Italic',
             color: '#0A2037',
-            fontSize: '2.2em',
+            fontSize: '2.0em',
         }
 
         return (
             <div className="container" style={container}>
                 <div className="row" style={row}>
                     <div className="col" style={col}>
-                        <h1 style={qoute}>"{this.state.text}"</h1>
-                        <br />
-                        <h2 style={name}>- {this.state.name}</h2>
-                        <h3 style={position}>{this.state.position}</h3>
+                        <div className="row">
+                            <div className="col">
+                                <h1 style={qoute}>"{this.state.text}"</h1>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col">
+                                <h2 style={name}>- {this.state.name}</h2>
+                                <h3 style={position}>{this.state.position}</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

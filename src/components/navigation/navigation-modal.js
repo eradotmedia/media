@@ -5,40 +5,43 @@ class NavigationModal extends Component {
 
     render() {
         const overlay = {
-            backgroundColor: 'RGBA(5, 5, 5, 0.90)',
-        };
-
-        const container = {
             position: 'fixed',
             top: '0px',
             left: '0px',
             right: '0px',
             bottom: '0px',
+            zIndex: '10000',
             background: 'RGBA(10, 32, 55, 0.90)',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+        };
+
+        const container = {
             color: '#FFFFFF',
-            border: 'none',
-            borderRadius: '0',
-            padding: '25px',
-            margin: '0px',
-            height: 'initial',
-            width: 'initial',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            padding: '50px 10px',
+            margin: '5px',
+            width: '90%',
+        };
+
+        const row = {
+            margin: '5px',
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-start',
             alignItems: 'flex-start',
-            zIndex: '10000',
-        };
-
-        const row = {
-            marginTop: '120px',
-            marginLeft: '80px',
+            width: 'inherit',
         };
 
         const col = {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            paddingLeft: '80px',
             color: 'white',
         };
 
@@ -46,7 +49,7 @@ class NavigationModal extends Component {
             fontFamily: 'Agaramond Regular',
             letterSpacing: '1px',
             textAlign: 'left',
-            fontSize: '5.0em',
+            fontSize: '3.6em',
             lineHeight: '1.0em',
             fontStyle: 'normal',
             margin: '0',
@@ -56,7 +59,7 @@ class NavigationModal extends Component {
             <div className="container-fluid" style={overlay}>
                 <div className="container" style={container}>
                     <div className="row" style={row}>
-                        <div className="col" style={col}>
+                        <div className="col-xs-12 col-md-6 col-lg-5" style={col}>
                             <NavLink to="/" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>home.</h1></NavLink>
                             <NavLink to="work" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>work.</h1></NavLink>
                             <NavLink to="about-us" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>about us.</h1></NavLink>
