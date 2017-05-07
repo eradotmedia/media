@@ -5,8 +5,6 @@ class Footer extends Component {
         const footer = {
             backgroundColor: '#0A2037',
             width: '100%',
-            height: '60px',
-            lineHeight: '60px',
             overflow: 'hidden',
         }
         const container = {
@@ -24,11 +22,20 @@ class Footer extends Component {
             margin: '0',
         }
 
-        const social = {
+        const textCol = {
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'flex-end',
-            color: '#FFFFFF'
+            color: '#FFFFFF',
+            height: '60px',
+            lineHeight: '60px',
+        }
+
+        const socialCol = {
+            display: 'flex',
+            flexDirection: 'row',
+            color: '#FFFFFF',
+            height: '60px',
+            lineHeight: '60px',
         }
 
         const icon = {
@@ -42,10 +49,10 @@ class Footer extends Component {
             <div className="footer" style={footer}>
                 <div className="container" style={container}>
                     <div className="row" style={row}>
-                        <div className="col-xs-12 col-md-6">
+                        <div className="col-xs-12 col-md-6 footer-text" style={textCol}>
                             <p style={paragraph}>{year} &copy; era.media</p>
                         </div>
-                        <div className="col-xs-12 col-md-6" style={social}>
+                        <div className="col-xs-12 col-md-6 footer-icon" style={socialCol}>
                             <a style={icon} href="https://www.youtube.com/channel/UCyxFoaz7sQaBi1paPgsrdpg" target="_blank"><i className="fa fa-youtube-play" aria-hidden="true"></i></a>
                             <a style={icon} href="https://www.instagram.com/era.media/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a>
                             <a style={icon} href="https://twitter.com/eradotmedia/" target="_blank"><i className="fa fa-twitter" aria-hidden="true"></i></a>

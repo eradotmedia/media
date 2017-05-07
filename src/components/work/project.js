@@ -34,8 +34,6 @@ class Project extends Component {
 
         const row = {
             display: 'flex',
-            flexDirection: 'col',
-            justifyContent: 'space-between',
             alignContent: 'flex-end',
             width: 'inherit',
             margin: '0',
@@ -99,21 +97,21 @@ class Project extends Component {
 
         return (
             <div className="container" style={container}>
-                <div className="row" style={row}>
-                    <div className="col-xs-6" style={col}>
+                <div className="row work-row" style={row}>
+                    <div className="col-xs-12 desktop-only" style={col}>
                         {
                             this.state.isOpen ? (
-                                <ul style={list} onMouseLeave={this.handleMouse}>
+                                <ul className="desktop-only" style={list} onMouseLeave={this.handleMouse}>
                                     {this.renderCapabilityList(capability)}
                                 </ul>
                             ) : (
-                                <ul style={icon} onMouseOver={this.handleMouse}>
+                                <ul className="desktop-only" style={icon} onMouseOver={this.handleMouse}>
                                     {this.renderCapabilityIcons(capability)}
                                 </ul>
                             )
                         }
                     </div>
-                    <div className="col-xs-6" style={col}>
+                    <div className="col-xs-12" style={col}>
                         <h3><span style={heading}>{this.state.client}</span></h3>
                         <h3><span style={heading}>{this.state.project}</span></h3>
                         <Link to={url} style={link} >read more <span style={arrow}>→</span></Link>

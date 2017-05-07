@@ -16,7 +16,7 @@ class OneColumn extends Component {
             padding: '0',
             margin: '0',
             width: '100%',
-            height: '640px',
+            height: '550px',
         }
 
         const row = {

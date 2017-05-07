@@ -18,6 +18,10 @@
     right: 35px;
 }
 
+.Nav-link {
+    font-size: 3.0em;
+}
+
 /* Icon */
 #nav-icon {
     width: 28px;
@@ -96,6 +100,20 @@
     left: 50%;
 }
 
+.footer-icon, .footer-text {
+    justify-content: center;
+}
+
+.desktop-only {
+    display: none;
+    visibility: hidden;
+}
+
+.work-row {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 
 @media (min-width: 40em) {
     .App-logo {
@@ -151,4 +169,24 @@
         transition: .25s ease-in-out;
     }
 
+    .Nav-link {
+        font-size: 4.5em;
+    }
+
+    .footer-icon {
+        justify-content: flex-end;
+    }
+
+    .footer-text {
+        justify-content: flex-start;
+    }
+
+    .desktop-only {
+        visibility: visible;
+    }
+
+    .work-row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

@@ -28,8 +28,8 @@ class QouteColumn extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-            width: '90%',
-            padding: '10px',
+            width: '95%',
+            padding: '5px',
         }
 
         const col = {
@@ -37,8 +37,8 @@ class QouteColumn extends Component {
             flexDirection: 'column',
             justifyContent: 'space-around',
             alignContent: 'center',
-            margin: '15px auto',
-            padding: '20px',
+            margin: '10px auto',
+            padding: '15px',
             color: '#fff',
             textAlign: 'left',
         }

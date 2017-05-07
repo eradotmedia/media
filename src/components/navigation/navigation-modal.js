@@ -43,13 +43,13 @@ class NavigationModal extends Component {
             flexDirection: 'column',
             alignItems: 'flex-start',
             color: 'white',
+            width: 'inherit',
         };
 
         const paragraph = {
             fontFamily: 'Agaramond Regular',
             letterSpacing: '1px',
             textAlign: 'left',
-            fontSize: '3.6em',
             lineHeight: '1.0em',
             fontStyle: 'normal',
             margin: '0',
@@ -59,13 +59,13 @@ class NavigationModal extends Component {
             <div className="container-fluid" style={overlay}>
                 <div className="container" style={container}>
                     <div className="row" style={row}>
-                        <div className="col-xs-12 col-md-6 col-lg-5" style={col}>
-                            <NavLink to="/" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>home.</h1></NavLink>
-                            <NavLink to="work" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>work.</h1></NavLink>
-                            <NavLink to="about-us" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>about us.</h1></NavLink>
-                            <NavLink to="capabilities" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>capabilities.</h1></NavLink>
-                            <NavLink to="careers" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>careers.</h1></NavLink>
-                            <NavLink to="contact-us" className="menu-link" onClick={this.props.clickHandler} ><h1 style={paragraph}>contact us.</h1></NavLink>
+                        <div className="col" style={col}>
+                            <NavLink to="/" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>home.</h1></NavLink>
+                            <NavLink to="work" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>work.</h1></NavLink>
+                            <NavLink to="about-us" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>about us.</h1></NavLink>
+                            <NavLink to="capabilities" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>capabilities.</h1></NavLink>
+                            <NavLink to="careers" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>careers.</h1></NavLink>
+                            <NavLink to="contact-us" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>contact us.</h1></NavLink>
                         </div>
                     </div>
                 </div>
