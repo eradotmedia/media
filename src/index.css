@@ -1,5 +1,226 @@
+@font-face {
+    font-family: "Texta Black";
+    src: url('./assets/fonts/texta/Black.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Texta Black Italic";
+    src: url('./assets/fonts/texta/Black-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Texta Heavy";
+    src: url('./assets/fonts/texta/Heavy.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Texta Heavy Italic";
+    src: url('./assets/fonts/texta/Heavy-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Texta Bold";
+    src: url('./assets/fonts/texta/Bold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Texta Bold Italic";
+    src: url('./assets/fonts/texta/Bold-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Texta Medium";
+    src: url('./assets/fonts/texta/Medium-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Texta Medium Italic";
+    src: url('./assets/fonts/texta/Medium.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Texta Book";
+    src: url('./assets/fonts/texta/Book.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Texta Light";
+    src: url('./assets/fonts/texta/Light.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Agaramond Bold";
+    src: url('./assets/fonts/agaramond/Bold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Agaramond Regular";
+    src: url('./assets/fonts/agaramond/Regular.otf');
+    font-style: normal;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: "Texta Book";
+}
+
+p {
+    font-family: "Texta Book";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:active {
+    color: #ED1C7F;
+}
+
+
+/* Icon */
+#nav-icon {
+    width: 30px;
+    height: 26px;
+    z-index: 90000;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #ED1C7F;
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+
+/* Icon */
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+    top: 10px;
+}
+
+#nav-icon span:nth-child(4) {
+    top: 20px;
+}
+
+#nav-icon.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover h1 {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.active {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.era-video {
+    padding: 0px;
+    margin: 0px auto;
+    display: block;
+}
+
+input::-webkit-input-placeholder {
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+input:-ms-input-placeholder {
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+textarea::-webkit-input-placeholder {
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: RGBA(255, 255, 255, 0.65) !important;
+}
+
+textarea:-ms-input-placeholder {
+    color: RGBA(255, 255, 255, 0.65) !important;
 }

@@ -6,8 +6,10 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "mediaelement": "^4.0.5",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
