@@ -6,6 +6,8 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "email-validator": "^1.0.7",
+    "firebase": "^4.0.0",
     "mediaelement": "^4.0.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Overlay from '../../components/project/overlay.js';
 import Video from '../../components/project/video.js';
+import Youtube from '../../components/project/youtube.js';
 import Text from '../../components/project/text.js';
 import FullWidthImage from '../../components/project/fullwidthImage.js';
 import Image from '../../components/project/image.js';
@@ -43,8 +44,7 @@ class Alroumi extends Component {
 
         return (
             <div className="container-fluid" style={mainContainer}>
-                <Overlay data={this.state.data}/>
-                <Video data={this.state.video.main}/>
+                <Video video={this.state.video.main} image={this.state.data.background}/>
                 <Text data={this.state.data}/>
                 <div className="container" style={container}>
                     <div className="row" style={row}>
@@ -57,6 +57,8 @@ class Alroumi extends Component {
                         <Image data={this.state.image.identity} />
                     </div>
                 </div>
+                <Youtube data={this.state.video.speech}/>
+                <Overlay data={this.state.data}/>
             </div>
         );
     }

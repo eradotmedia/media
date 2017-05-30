@@ -23,19 +23,21 @@ class Footer extends Component {
         }
 
         const textCol = {
+            margin: '20px 0',
             display: 'flex',
             flexDirection: 'row',
             color: '#FFFFFF',
-            height: '60px',
-            lineHeight: '60px',
+            height: '25px',
+            lineHeight: '25px',
         }
 
         const socialCol = {
+            margin: '20px 0',
             display: 'flex',
             flexDirection: 'row',
             color: '#FFFFFF',
-            height: '60px',
-            lineHeight: '60px',
+            height: '25px',
+            lineHeight: '25px',
         }
 
         const icon = {

@@ -5,6 +5,13 @@ class About extends Component {
         const container = {
             margin: '0',
             padding: '0',
+            backgroundColor: '#0A2037',
+            color: '#FFFFFF',
+            height: '93vh',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
         }
 
         return (

@@ -9,13 +9,16 @@ class Work extends Component {
             margin: '0',
             padding: '0',
         }
+        console.log(Portfolio);
 
         return (
             <div className="container-fluid" style={container}>
-                <OneColumn data={Portfolio.ALMARKAZ}/>
+                <OneColumn data={Portfolio.MARKAZ}/>
                 <TwoColumn dataOne={Portfolio.IKEA} dataTwo={Portfolio.BOE} />
-                <OneColumn data={Portfolio.KOC}/>
-                <TwoColumn dataOne={Portfolio.ALROUMI} dataTwo={Portfolio.AM} />
+                <OneColumn data={Portfolio.DERAYA}/>
+                <TwoColumn dataOne={Portfolio.ALROUMI} dataTwo={Portfolio.ASTONMARTIN} />
+                <OneColumn data={Portfolio.CIRCUITPLUS}/>
+                <TwoColumn dataOne={Portfolio.SHRIMPY} dataTwo={Portfolio.EQUATE} />
             </div>
         );
     }

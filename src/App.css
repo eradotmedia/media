@@ -170,7 +170,7 @@
     }
 
     .Nav-link {
-        font-size: 4.5em;
+        font-size: 4.2em;
     }
 
     .footer-icon {
@@ -190,3 +190,16 @@
         justify-content: space-between;
     }
 }
+
+
+/* inherit height from parent */
+.carousel {
+    height: 100%;
+    width: 100%;
+}
+.carousel-cell {
+     height: 100%
+ }
+
+/* move page dots into carousel */
+.flickity-page-dots { bottom: 10px; }

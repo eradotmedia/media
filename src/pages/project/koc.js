@@ -4,16 +4,18 @@ import Video from '../../components/project/video.js';
 import Youtube from '../../components/project/youtube.js';
 import Text from '../../components/project/text.js';
 import Image from '../../components/project/image.js';
-import Data from '../../data/portfolio';
+import Quote from '../../components/project/quote.js';
+import Data from '../../data/portfolio/deraya';
 
 class Koc extends Component {
     constructor() {
         super();
-        const data = Data.KOC;
+        const data = Data;
         this.state = {
             data: data,
             image: data.image,
             video: data.video,
+            quote: data.quote,
         }
     }
     render() {
@@ -28,14 +30,15 @@ class Koc extends Component {
 
         return (
             <div className="container-fluid" style={container}>
-                <Overlay data={this.state.data}/>
-                <Video data={this.state.video.main}/>
+                <Video video={this.state.video.main} image={this.state.data.background}/>
                 <Text data={this.state.data}/>
                 <Youtube data={this.state.video.deraya}/>
                 <Image data={this.state.image.print} />
                 <Youtube data={this.state.video.future}/>
                 <Youtube data={this.state.video.environment}/>
                 <Youtube data={this.state.video.song}/>
+                <Quote data={this.state.quote.traffic}/>
+                <Overlay data={this.state.data}/>
             </div>
         );
     }

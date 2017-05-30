@@ -1,8 +1,7 @@
 const Qoute = {
-    CEO: {
-        text: "that's not how we work... so take it or leave it...",
-        name: 'Saoud Al Humaidhi',
-        position: 'CEO',
-    },
-}
+    text: 'Global standards with a local feel.',
+    name: 'Mohammed Al Najdi',
+    position: 'The Battle Spectator.',
+};
+
 export default Qoute;

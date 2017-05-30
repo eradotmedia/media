@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Overlay from '../../components/project/overlay.js';
 import Text from '../../components/project/text.js';
 import Video from '../../components/project/video.js';
+import Youtube from '../../components/project/youtube.js';
 import Image from '../../components/project/image.js';
 import Data from '../../data/portfolio';
 
@@ -26,32 +27,14 @@ class Shrimpy extends Component {
             alignItems: 'center',
         }
 
-        const container = {
-            margin: '20px auto',
-            padding: '20px 0',
-        }
-
-        const row = {
-            margin: 'auto',
-            padding: '0px',
-            width: '90%',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-        }
-
         return (
             <div className="container-fluid" style={mainContainer}>
-                <Overlay data={this.state.data}/>
-                <Video data={this.state.video.main}/>
+                <Video video={this.state.video.main} image={this.state.data.background}/>
                 <Text data={this.state.data}/>
-                <div className="container" style={container}>
-                    <div className="row" style={row}>
-                        <div className="col-xs-12 col-md-12">
-                            <Image data={this.state.image.storyboard} />
-                        </div>
-                    </div>
-                </div>
+                <Image data={this.state.image.storyboard} />
+                <Youtube data={this.state.video.space}/>
+                <Youtube data={this.state.video.ny}/>
+                <Overlay data={this.state.data}/>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import Listing from '../../data/listing.js';
 
 class ListingColumn extends Component {
 
@@ -53,9 +54,9 @@ class ListingColumn extends Component {
             <div className="container" style={container}>
                 <div className="row" style={row}>
                     <div className="col" style={col}>
-                        <h2 style={paragraph}>This is the brief senetence that will really make you to want to work with us... and maybe also make you laugh...</h2>
+                        <h2 style={paragraph}>{Listing.text}</h2>
                         <br />
-                        <Link to="/work" style={link} >click here to <br />see our listings</Link>
+                        <Link to={Listing.link} style={link} >click here to <br />{Listing.button}</Link>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import Qoute from '../../data/qoute.js';
 class QouteColumn extends Component {
     constructor(props) {
         super(props);
-        let data = Qoute.CEO;
+        let data = Qoute;
         this.state = {
             data: data,
             text: data.text,

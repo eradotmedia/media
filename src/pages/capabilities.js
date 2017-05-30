@@ -15,7 +15,7 @@ class Capabilities extends Component {
         }
 
         const row = {
-            padding: '50px',
+            padding: '20px',
         }
 
         return (

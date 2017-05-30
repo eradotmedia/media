@@ -61,7 +61,6 @@ class Project extends Component {
         }
 
         const link = {
-            color: "#FFF",
             fontFamily: 'Agaramond Regular',
             fontSize: '1.0em',
             textDecoration: 'none',
@@ -114,7 +113,7 @@ class Project extends Component {
                     <div className="col-xs-12" style={col}>
                         <h3><span style={heading}>{this.state.client}</span></h3>
                         <h3><span style={heading}>{this.state.project}</span></h3>
-                        <Link to={url} style={link} >read more <span style={arrow}>→</span></Link>
+                        <Link to={url} style={link} className="a-link">read more <span style={arrow}>→</span></Link>
                     </div>
                 </div>
             </div>

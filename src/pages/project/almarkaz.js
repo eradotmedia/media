@@ -5,12 +5,12 @@ import Video from '../../components/project/video.js';
 import ImageGrid from '../../components/project/image-grid.js';
 import SocialMedia from '../../components/project/social-media.js';
 import Overlay from '../../components/project/overlay.js';
-import Data from '../../data/portfolio';
+import Data from '../../data/portfolio/markaz';
 
 class Almarkaz extends Component {
     constructor() {
         super();
-        const data = Data.ALMARKAZ;
+        const data = Data;
         this.state = {
             data: data,
             image: data.image,
@@ -36,7 +36,7 @@ class Almarkaz extends Component {
         const row = {
             margin: 'auto',
             padding: '0px',
-            width: '90%',
+            width: '80%',
         }
 
         const col = {
@@ -45,11 +45,10 @@ class Almarkaz extends Component {
 
         return (
             <div className="container-fluid" style={mainContainer}>
-                <Overlay data={this.state.data}/>
-                <Video data={this.state.video.main}/>
+                <Video video={this.state.video.main} image={this.state.data.background}/>
                 <Text data={this.state.data}/>
                 <FullWidthImage data={this.state.image.child} />
-                <ImageGrid data={this.state.image.storyboard} />
+                <ImageGrid data={this.state.image.storyboard} padding="10px"/>
                 <FullWidthImage data={this.state.image.man} />
                 <div className="container" style={socialContainer}>
                     <div className="row" style={row}>
@@ -69,6 +68,7 @@ class Almarkaz extends Component {
                         </div>
                     </div>
                 </div>
+                <Overlay data={this.state.data}/>
             </div>
         );
     }

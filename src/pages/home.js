@@ -15,9 +15,9 @@ class Home extends Component {
 
         return (
             <div className="container-fluid" style={container}>
-                <OneColumn data={Portfolio.ALMARKAZ}/>
+                <OneColumn data={Portfolio.MARKAZ}/>
                 <ThreeColumn data={Social}/>
-                <OneColumn data={Portfolio.KOC}/>
+                <OneColumn data={Portfolio.DERAYA}/>
                 <TwoColumn qoute={Qoute.CEO} project={Portfolio.BOE} />
                 <OneColumn data={Portfolio.IKEA}/>
             </div>

@@ -12,12 +12,12 @@ class Youtube extends Component {
         const row = {
             margin: '0px',
             padding: '20px 0',
-            width: '90%',
+            width: '80%',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
         }
-
+        
         return (
             <div className="container" style={container}>
                 <div className="row" style={row}>

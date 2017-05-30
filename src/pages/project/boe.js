@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import Overlay from '../../components/project/overlay.js';
 import Text from '../../components/project/text.js';
 import Video from '../../components/project/video.js';
+import Youtube from '../../components/project/youtube.js';
 import FullWidthImage from '../../components/project/fullwidthImage.js';
 import Image from '../../components/project/image.js';
-import Data from '../../data/portfolio';
+import Carousel from '../../components/project/carousel.js';
+import Data from '../../data/portfolio/boe';
 
 class Boe extends Component {
     constructor() {
         super();
-        const data = Data.BOE;
+        const data = Data;
         this.state = {
             data: data,
             image: data.image,
@@ -26,55 +28,18 @@ class Boe extends Component {
             alignItems: 'center',
         }
 
-        const container = {
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'center',
-        }
-
-        const row = {
-            margin: '0px',
-            padding: '50px 0',
-            width: '90%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        }
-
-        const img = {
-            display: 'block',
-            height: '788px'
-        }
-
         return (
             <div className="container-fluid" style={mainContainer}>
-                <Video data={this.state.video.main}/>
+                <Video video={this.state.video.main} image={this.state.data.background}/>
                 <Text data={this.state.data}/>
                 <Image data={this.state.image.stationary} />
+                <Youtube data={this.state.video.intro}/>
+                <Carousel data={this.state.image.stage}/>
                 <FullWidthImage data={this.state.image.focus} />
-                <div className="container" style={container}>
-                    <div className="row" style={row}>
-                        <div className="carousel" data-flickity='{ "cellAlign": "center", "imagesLoaded": true }'>
-                            <img className="img-fluid" src={this.state.image.sketch} alt="battle-ground-sketch"/>
-                            <img className="img-fluid" src={this.state.image.mockup} alt="battle-ground-mockup"/>
-                        </div>
-                    </div>
-                </div>
                 <Image data={this.state.image.technology} />
-                <div className="container" style={container}>
-                    <div className="row" style={row}>
-                        <div className="carousel" data-flickity='{ "cellAlign": "center", "imagesLoaded": true }'>
-                            <img className="img-fluid" src={this.state.image.clothing[1]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[2]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[3]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[4]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[5]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[6]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[7]} alt="boe clothing"/>
-                            <img className="img-fluid" src={this.state.image.clothing[8]} alt="boe clothing"/>
-                        </div>
-                    </div>
-                </div>
+                <Youtube data={this.state.video.slomo}/>
+                <Carousel data={this.state.image.clothing}/>
+                <Youtube data={this.state.video.ceremony}/>
                 <Overlay data={this.state.data}/>
             </div>
         );

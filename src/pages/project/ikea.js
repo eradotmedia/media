@@ -59,8 +59,7 @@ class Ikea extends Component {
 
         return (
             <div className="container-fluid" style={fullwidthContainer}>
-                <Overlay data={this.state.data}/>
-                <Video data={this.state.video.main}/>
+                <Video video={this.state.video.main} image={this.state.data.background}/>
                 <Text data={this.state.data}/>
                 <div className="container" style={container}>
                     <div className="row" style={row}>
@@ -93,6 +92,7 @@ class Ikea extends Component {
                 </div>
                 <Quote data={this.state.quote.evening}/>
                 <Youtube data={this.state.video.ad} />
+                <Overlay data={this.state.data}/>
             </div>
         );
     }

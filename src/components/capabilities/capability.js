@@ -14,10 +14,6 @@ class Capability extends Component {
         }
     }
     render() {
-        const col = {
-            padding: '60px',
-        }
-
         const row = {
             display: 'block',
             margin: 'auto',
@@ -46,7 +42,7 @@ class Capability extends Component {
         }
 
         return (
-            <div className="col-xs-12 col-md-6" style={col}>
+            <div className="col-xs-12 col-md-6 capability-col">
                 <div className="row" style={row}>
                     <img src={this.state.icon} height="100px" width="100px" alt="icon"/>
                 </div>

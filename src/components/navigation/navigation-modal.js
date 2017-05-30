@@ -64,7 +64,7 @@ class NavigationModal extends Component {
                             <NavLink to="work" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>work.</h1></NavLink>
                             <NavLink to="about-us" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>about us.</h1></NavLink>
                             <NavLink to="capabilities" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>capabilities.</h1></NavLink>
-                            <NavLink to="careers" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>careers.</h1></NavLink>
+                            {/* <NavLink to="careers" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>careers.</h1></NavLink> */}
                             <NavLink to="contact-us" className="menu-link" onClick={this.props.clickHandler} ><h1 className="Nav-link" style={paragraph}>contact us.</h1></NavLink>
                         </div>
                     </div>

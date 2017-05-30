@@ -8,7 +8,7 @@ class Quote extends Component {
             justifyContent: 'center',
             overflow: 'hidden',
             flexDirection: 'column',
-            margin: '80px auto',
+            margin: '50px auto',
         }
 
         const row = {

@@ -4,7 +4,10 @@ class Video extends Component {
     render() {
         return (
             <div className="embed-responsive embed-responsive-16by9">
-                <video className="embed-responsive-item era-video" src={this.props.data} type="video/mp4" controls />
+                <video className="embed-responsive-item era-video" controls>
+                    <source src={this.props.video} type="video/mp4" />
+                    <img src={this.props.image} alt="project"/>
+                </video>
             </div>
         );
     }

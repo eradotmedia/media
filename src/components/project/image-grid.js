@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 
-const row = {
-    margin: '50px',
-}
-
-const col = {
-    padding: '0',
-}
-
 class ImageGrid extends Component {
     render() {
+        const row = {
+            margin: '50px',
+        }
+
         return (
             <div className="container">
                 <div className="row" style={row}>
@@ -20,7 +16,13 @@ class ImageGrid extends Component {
     }
 
     renderImages() {
+        let padding = this.props.padding;
         let values = Object.values(this.props.data);
+
+        const col = {
+            padding: padding,
+        }
+
         return (
             values.map(function(element, index) {
                 return (

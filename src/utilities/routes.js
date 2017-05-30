@@ -14,6 +14,8 @@ import Koc from '../pages/project/koc.js';
 import Alroumi from '../pages/project/alroumi.js';
 import Shrimpy from '../pages/project/shrimpy.js';
 import Equate from '../pages/project/equate.js';
+import CircuitPlus from '../pages/project/circuitplus.js';
+import AstonMartin from '../pages/project/astonmartin.js';
 
 const Routes = (props) => (
    <Router onUpdate={() => window.scrollTo(0, 0)} {...props} history={browserHistory}>
@@ -30,6 +32,8 @@ const Routes = (props) => (
          <Route path="alroumi" component={Alroumi} />
          <Route path="shrimpy" component={Shrimpy} />
          <Route path="equate" component={Equate} />
+         <Route path="circuitplus" component={CircuitPlus} />
+         <Route path="astonmartin" component={AstonMartin} />
       </Route>
    </Router>
 );
