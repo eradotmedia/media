@@ -10,22 +10,18 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ### Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Node.js and npm](nodejs.org)
-
-### Developing
-
-Run `npm install` to install all dependencies.
+- [Node.js and npm](https://nodejs.org)
+- [Firebase](https://firebase.google.com/)
 
 ## Build & development
 
-Run `npm start` for building and for preview.
+Run `npm install` to install all dependencies.
+
+Run `npm start` for previewing.
 
 ## Deployment
 
 Run `npm run build` will build the app for production to the build folder.
 
-### Maintainers
-* [@iammoaz](https://github.com/iammoaz)
+Run `firebase deploy` will push the build to firebase hosting.
 
-### License
-[![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
