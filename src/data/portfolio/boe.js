@@ -8,7 +8,7 @@ const BOE = {
     approach: {
         1: 'From the athlete goodie bags to the clever door hangers we distributed at our partner hotel, every aspect of the experience was designed and executed to promote online conversations. Our team carried out extensive social media coverage across Instagram, Twitter, and Facebook. The focus was on creating and capturing inspiring stories through shareable, short videos and high quality imagery that were uploaded and posted live during the event. Beyond that, we also conducted live, sports coverage of the main competition on YouTube which helped us reach over 11,000 viewers that could not make it to the event.',
     },
-    background: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fboe%2Ffocus-scene.jpg?alt=media&token=012b3691-b56b-4b7a-88d5-653e5f89ce00',
+    background: 'https://firebasestorage.googleapis.com/v0/b/test-codedesign.appspot.com/o/focus-scene-min.jpg?alt=media&token=05e1888d-5162-41fe-bfd4-17f14c65bd65',
     path: 'boe',
     video: {
         main: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fboe%2FBOE_2016.mp4?alt=media&token=64c6f94e-729b-44d2-97dc-ab5ad1e600b9',

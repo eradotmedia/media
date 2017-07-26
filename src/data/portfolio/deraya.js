@@ -8,7 +8,7 @@ const DERAYA = {
     approach: {
         1: 'An integrated, year long marketing campaign under the name “Deraya”, Arabic for “Knowledge”. The campaign started with a mass, digital distribution of a 3D animated infographic that explained the details of the geographical surveys conducted by KOC. This background was supplemented with a captivating visual experience on Instagram, a series of four sub campaign videos, and an interactive booth in the Avenues Mall to reach the public across all touch points.',
     },
-    background: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fkoc%2Fbackground.jpg?alt=media&token=480e3f33-65b1-41fc-8147-2b574979347b',
+    background: 'https://firebasestorage.googleapis.com/v0/b/test-codedesign.appspot.com/o/background-min.jpg?alt=media&token=d4753ddd-6c32-42ab-a01d-f8af9deb3235',
     path: 'deraya',
     video: {
         main: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fkoc%2FDERAYA_2016.mp4?alt=media&token=5baeafac-1010-45e7-81d9-3c97e3abfe61',

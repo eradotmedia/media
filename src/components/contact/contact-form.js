@@ -37,7 +37,6 @@ class ContactForm extends Component {
     }
 
     pushToFirebase(name, email, subject, message) {
-        console.log(name, email, subject, message);
         const rootRef = firebase.database().ref().child('emails');;
         const newSubscriberRef = rootRef.push()
         newSubscriberRef.set({

@@ -4,25 +4,25 @@ import TwoColumn from '../components/home/twoColumn.js';
 import ThreeColumn from '../components/home/threeColumn.js';
 import Portfolio from '../data/portfolio';
 import Social from '../data/social';
-import Qoute from '../data/qoute';
+import Quote from '../data/quote';
 
 class Home extends Component {
     render() {
         const container = {
             margin: '0',
             padding: '0',
-        }
+        };
 
         return (
             <div className="container-fluid" style={container}>
                 <OneColumn data={Portfolio.MARKAZ}/>
                 <ThreeColumn data={Social}/>
                 <OneColumn data={Portfolio.DERAYA}/>
-                <TwoColumn qoute={Qoute.CEO} project={Portfolio.BOE} />
+                <TwoColumn quote={Quote.CEO} project={Portfolio.BOE} />
                 <OneColumn data={Portfolio.IKEA}/>
             </div>
         );
     }
-};
+}
 
 export default Home;

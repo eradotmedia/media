@@ -17,11 +17,11 @@ class ImageGrid extends Component {
 
     renderImages() {
         let padding = this.props.padding;
-        let values = Object.values(this.props.data);
+        let values = Object.keys(this.props.data).map(item => this.props.data[item]);
 
         const col = {
             padding: padding,
-        }
+        };
 
         return (
             values.map(function(element, index) {

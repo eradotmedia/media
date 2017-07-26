@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import ProjectColumn from './projectColumn';
-import QouteColumn from './qouteColumn';
+import QuoteColumn from './quoteColumn';
 
 class TwoColumn extends Component {
     constructor(props) {
         super(props);
 
-        let qoute = props.qoute;
+        let quote = props.quote;
         let project = props.project;
         this.state = {
-            qoute: qoute,
+            quote: quote,
             project: project,
         };
     }
@@ -32,7 +32,7 @@ class TwoColumn extends Component {
             <div className="container" style={container}>
                 <div className="row" >
                     <div className="col-xs-12 col-md-5 col-lg-4" style={col}>
-                        <QouteColumn />
+                        <QuoteColumn />
                     </div>
                     <div className="col-xs-12 col-md-7 col-lg-8" style={col}>
                         <ProjectColumn data={this.state.project} />

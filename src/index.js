@@ -6,6 +6,7 @@ import { browserHistory } from 'react-router';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-grid.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 const config = {
     apiKey: "AIzaSyBe3AwuChHFr-UVZH_M-gPBih5VWDG1va4",

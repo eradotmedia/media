@@ -46,8 +46,6 @@ class Contact extends Component {
             letterSpacing: '1px',
         }
 
-        console.log(this.state.modal);
-
         return (
             <div className="container-fluid" style={mainContainer}>
                 {!modalState ?

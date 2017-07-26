@@ -13,7 +13,7 @@ const ASTONMARTIN = {
     path: 'astonmartin',
     background: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fastonmartin%2Fbackground.jpg?alt=media&token=1cdc30d6-5c9f-4a41-b655-58a20a1ba8a3',
     video: {
-        main: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fcircuitplus%2FCIRCUITPLUS_2017.mp4?alt=media&token=ca38625a-ab7d-43ce-9872-9dea1879c370',
+        main: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fastonmartin%2FAMRB%202%20EventEdit.mp4?alt=media&token=44c995a0-3162-4122-8506-77728a5f4c45',
     },
     image: {
         print: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Fastonmartin%2Fam_print.png?alt=media&token=468ae2cd-be3f-428e-b0e3-1a57b2e9d1e0',

@@ -7,9 +7,36 @@ class Navigation extends Component {
     constructor() {
         super();
         this.handleClick = this.handleClick.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
         this.state = {
             isOpen: false,
+            navBackgroundColor: 'transparent',
+            navItemsTop: '50px',
+            logoHeight: '35px'
         }
+    }
+
+    handleScroll() {
+        if(window.pageYOffset >= 120) {
+            this.setState({
+                navBackgroundColor: 'rgba(10, 32, 55, 0.9)',
+                navItemsTop: '30px',
+                logoHeight: '25px',
+            });
+        } else {
+            this.setState({
+                navBackgroundColor: 'transparent',
+                navItemsTop: '50px',
+                logoHeight: '35px',
+            });
+        }
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
     }
 
     handleClick() {
@@ -19,19 +46,10 @@ class Navigation extends Component {
     }
 
     render() {
-        const circle = {
-            padding: '0px',
-            position: 'fixed',
-            display: 'flex',
-            alignItem: 'center',
-            justifyContent: 'center',
-            zIndex: '90000',
-        }
-
         const modalVisibility = this.state.isOpen;
 
         return (
-            <div>
+            <div ref="navbar" className="App-nav-bar" style={{backgroundColor: this.state.navBackgroundColor}}>
                 {
                     modalVisibility ? (
                         <NavigationModal clickHandler={this.handleClick} />
@@ -39,10 +57,10 @@ class Navigation extends Component {
                         <div></div>
                     )
                 }
-                <div className="App-header">
-                    <Link to="/"><img src={logo} className="App-logo" alt="logo"/></Link>
+                <div className="App-header" style={{top: this.state.navItemsTop}}>
+                    <Link to="/"><img src={logo} style={{height: this.state.logoHeight}} className="App-logo" alt="logo"/></Link>
                 </div>
-                <div className="Nav-circle" style={circle}>
+                <div className="Nav-circle" style={{top: this.state.navItemsTop}}>
                     <div className={modalVisibility ? 'open' : ''} id="nav-icon" onClick={this.handleClick}>
                         <span></span>
                         <span></span>
@@ -53,6 +71,6 @@ class Navigation extends Component {
             </div>
         );
     }
-};
+}
 
 export default Navigation;

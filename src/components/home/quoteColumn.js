@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Qoute from '../../data/qoute.js';
+import Quote from '../../data/quote.js';
 
-class QouteColumn extends Component {
+class QuoteColumn extends Component {
     constructor(props) {
         super(props);
-        let data = Qoute;
+        let data = Quote;
         this.state = {
             data: data,
             text: data.text,
@@ -43,7 +43,7 @@ class QouteColumn extends Component {
             textAlign: 'left',
         }
 
-        const qoute = {
+        const quote = {
             fontFamily: 'Texta Heavy',
             letterSpacing: '1px',
             fontStyle: 'Italic',
@@ -70,7 +70,7 @@ class QouteColumn extends Component {
                     <div className="col" style={col}>
                         <div className="row">
                             <div className="col">
-                                <h1 style={qoute}>"{this.state.text}"</h1>
+                                <h1 style={quote}>"{this.state.text}"</h1>
                             </div>
                         </div>
                         <div className="row">
@@ -86,4 +86,4 @@ class QouteColumn extends Component {
     }
 };
 
-export default QouteColumn;
+export default QuoteColumn;

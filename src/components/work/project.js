@@ -124,12 +124,10 @@ class Project extends Component {
         this.setState(prevState => ({
             isOpen: !prevState.isOpen,
         }));
-
-        console.log(this.state.isOpen);
     }
 
     renderCapabilityList(capability) {
-        let keys = Object.values(capability);
+        let keys = Object.keys(capability).map(item => capability[item]);
         const text = {
             fontFamily: 'Texta Heavy',
             fontStyle: 'italic',
@@ -147,7 +145,7 @@ class Project extends Component {
     };
 
     renderCapabilityIcons(capability) {
-        let keys = Object.values(capability);
+        let keys = Object.keys(capability).map(item => capability[item]);
         return (
             keys.map(function(element, index) {
                 return (

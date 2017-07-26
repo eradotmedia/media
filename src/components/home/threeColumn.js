@@ -6,12 +6,12 @@ class ThreeColumn extends Component {
     constructor(props) {
         super(props);
 
-        let instagram = props.data.INSTAGRAM;
-        let twitter = props.data.TWITTER;
+        let camera = props.data.camera;
+        let ikea = props.data.ikea;
 
         this.state = {
-            instagram: instagram,
-            twitter: twitter,
+            camera: camera,
+            ikea: ikea,
         };
     }
 
@@ -38,10 +38,10 @@ class ThreeColumn extends Component {
             <div className="container" style={container}>
                 <div className="row" style={row}>
                     <div className="col-xs-12 col-md-4" style={col}>
-                        <SocialColumn data={this.state.instagram} />
+                        <SocialColumn data={this.state.camera} />
                     </div>
                     <div className="col-xs-12 col-md-4" style={col} >
-                        <SocialColumn data={this.state.twitter} />
+                        <SocialColumn data={this.state.ikea} />
                     </div>
                     <div className="col-xs-12 col-md-4" style={col} >
                         <ListingColumn />

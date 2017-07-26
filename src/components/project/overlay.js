@@ -81,11 +81,11 @@ class Overlay extends Component {
     };
 
     renderSocialIcons(socialList) {
-        let keys = Object.values(socialList);
+        let keys = Object.keys(socialList).map(item => socialList[item]);
 
         const list = {
             margin: '8px auto',
-        }
+        };
 
         const icon = {
             padding: '20px 5px',
@@ -104,10 +104,10 @@ class Overlay extends Component {
     };
 
     renderCapabilityIcons(capability) {
-        let keys = Object.values(capability);
+        let keys = Object.keys(capability).map(item => capability[item]);
         const list = {
             margin: '5px auto',
-        }
+        };
 
         const img = {
             width: '15px',

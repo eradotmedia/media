@@ -5,7 +5,7 @@ const paragraph = {
     fontSize: '1.1em',
     lineHeight: '1.2em',
     margin: '0',
-}
+};
 
 class Text extends Component {
     constructor(props) {
@@ -63,7 +63,8 @@ class Text extends Component {
     }
 
     renderApproach(approach) {
-        let keys = Object.values(approach);
+        let keys = Object.keys(approach).map(item => approach[item]);
+        console.log(keys, approach);
         return (
             keys.map(function(element, index) {
                 return (
