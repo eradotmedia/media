@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const ASTONMARTIN = {
     client: 'ASTON MARTIN',
-    project: 'DIGITAL CAMPAIGN',
+    project: 'DIGITAL MEDIA CAMPAIGN',
     heading: 'The highest electoral ranking in the last 5 cycles.',
     about: 'Aston Martin is a lifestyle brand that speaks for itself. Founded in 1913, the brand has been around for over a century and has global recognition for its high end automobiles and luxurious lifestyle products.',
     goal: 'Aston Martin came to us with the goal of increasing sales during their historically low summer season.',

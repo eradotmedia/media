@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const BOE = {
     client: 'THE BATTLE - EAST',
-    project: '2016 EVENT',
+    project: 'FITNESS EVENT',
     heading: '710,327 impressions. 115,000 engagements. 3,000 attendees.',
     about: 'The Battle is an all encompassing fitness festival that was created in 2013 by Circuit+ Fitness, with the goal of uniting the excitement of fitness and the thriving athletic communities in the Middle East under one roof. Over the years, this initiative grew to attract athletes from all over the globe at The Battle – East – in Kuwait.',
     goal: 'To successfully manage and execute the biggest Battle to date, and to extend the energy and excitement experienced at The Battle to the digital realm.',

@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const SHRIMPY = {
     client: 'SHRIMPY',
-    project: 'RAMADAN 2016',
+    project: 'RAMADAN AD',
     heading: '',
     about: 'Shrimpy opened its doors in 1988, establishing itself as Kuwait’s first fast-seafood restaurant. Today, the brand operates 24 active branches locally, as well as one branch in Dubai, where it serves its usual selection of delicious seafood and other specialty items.',
     goal: 'Shortly after rebranding, Shrimpy came to us with the goal of repositioning their local brand as a multi-national food chain with high quality, international food standards. Simultaneously, Shrimpy wanted to introduce one of its latest specialty dishes, the chicken fillet.',

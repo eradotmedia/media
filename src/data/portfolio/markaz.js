@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const MARKAZ = {
     client: 'ALMARKAZ',
-    project: 'RAMADAN 2016',
+    project: 'RAMADAN AD',
     heading: '43 years of service personified by Dr. Saleh Al-Ojairi.',
     about: 'Kuwait Finance Centre, more commonly known as “Markaz”, is one of the leading asset management and investment banking institutions in the region. The client has been a consistent source of trust and authority in the financial sector, since its establishment in 1974.',
     goal: 'Markaz came to us with the goal of solidifying its positioning, both locally and regionally, as a reputable institution driven by deep fundamentals, making it the ultimate choice for wealth creation and management.',

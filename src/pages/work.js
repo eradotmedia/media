@@ -8,7 +8,7 @@ class Work extends Component {
         const container = {
             margin: '0',
             padding: '0',
-        }
+        };
 
         return (
             <div className="container-fluid" style={container}>

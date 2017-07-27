@@ -38,6 +38,7 @@ class ProjectColumn extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-end',
+            alignItems: 'flex-end',
             alignContent: 'flex-end',
             margin: '20px',
             padding: '20px',

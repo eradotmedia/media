@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const EQUATE = {
     client: 'EQUATE',
-    project: 'PARTNERS ALL THE WAY',
+    project: 'SUSTAINABILITY CAMPAIGN',
     heading: '',
     about: "EQUATE is a global producer of petrochemicals and Kuwait's first international Petrochemical Joint Venture. It is an organization that actively participates in the creation of a better world by providing reliable services and solutions.",
     goal: "EQUATE came to us with the goal of launching their Sustainability Strategy 2025 through an internal campaign targeted at their 1,300 Employees, known as EQUATERs.",

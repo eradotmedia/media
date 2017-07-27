@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const DERAYA = {
     client: 'KOC',
-    project: 'DERAYA CAMPAIGN',
+    project: 'DERAYA AWARENESS',
     heading: '3,000,000+ views across Instagram and YouTube.',
     about: 'Kuwait Oil Company is considered one of the most esteemed oil companies in the region, responsible for ongoing activities and exploratory operations in Kuwait since 1934. In 2016, KOC conducted one of the biggest exploratory surveys around the Kuwait Bay area.',
     goal: 'KOC came to us with two ultimate goals -  to educate the public about its ongoing, nationwide geographical surveys, and to generate a positive sentiment and emotional attachment between the public and KOC.',

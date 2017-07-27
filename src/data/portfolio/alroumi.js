@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const ALROUMI = {
     client: 'ABDULLAH ALROUMI',
-    project: 'ELECTION 2016',
+    project: 'ELECTIONS CAMPAIGN',
     heading: 'The highest electoral ranking in the last 5 cycles.',
     about: 'Abdullah Al Roumi is a member of the Kuwaiti National Assembly from the first district. Al Roumi has been in Parliament since 1985 and was previously the vice speaker of the Parliament. He is currently the most senior member of the National Front.',
     goal: 'Abdullah Al Roumi came to us with the goal of succeeding a seat in the 2016 National Assembly after the dissolution of the Kuwaiti Parliament in 2016.',

@@ -1,7 +1,7 @@
 import Capabilities from '../capability';
 const IKEA = {
     client: 'IKEA',
-    project: 'RAMADAN 2016',
+    project: 'RAMADAN AD',
     heading: '1,000,000+ views and 169% increase in in-store foot traffic.',
     about: 'IKEA is a multi-national, household brand for ready-to-assemble furniture, appliances, and home accessories.',
     goal: 'IKEA came to us with the goal of promoting their kitchenware to Kuwaiti females, aged 25 and over in anticipation of the month of Ramadan.',

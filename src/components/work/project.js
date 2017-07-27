@@ -37,18 +37,19 @@ class Project extends Component {
             alignContent: 'flex-end',
             width: 'inherit',
             margin: '0',
-        }
+        };
 
         const col = {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-end',
             alignContent: 'flex-end',
+            alignItems: 'flex-end',
             margin: '15px',
             padding: '15px',
             color: '#fff',
             textAlign: 'right',
-        }
+        };
 
         const heading = {
             backgroundColor: "#ED1C7F",
@@ -58,21 +59,21 @@ class Project extends Component {
             padding: '4px 10px',
             margin: '2px',
             letterSpacing: '1px',
-        }
+        };
 
         const link = {
             fontFamily: 'Agaramond Regular',
             fontSize: '1.0em',
             textDecoration: 'none',
             letterSpacing: '1px',
-        }
+        };
 
         const arrow = {
             color: '#ED1C7F',
             fontSize: '28px',
             lineHeight: '26px',
             verticalAlign: 'text-top',
-        }
+        };
 
         const list = {
             backgroundColor: '#ED1C7F',
@@ -83,16 +84,16 @@ class Project extends Component {
             width: '190px',
             textAlign: 'left',
             margin: '0',
-        }
+        };
 
         const icon = {
             listStyle: 'none',
             display: 'flex',
             flexDirection: 'row',
             margin: '0',
-        }
+        };
 
-        const url = `/${this.state.path}`
+        const url = `/${this.state.path}`;
 
         return (
             <div className="container" style={container}>
@@ -154,6 +155,6 @@ class Project extends Component {
             })
         );
     };
-};
+}
 
 export default Project;
