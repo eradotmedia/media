@@ -8,7 +8,7 @@ const MARKAZ = {
     approach: {
         1: 'A cinematic television commercial with Dr. Saleh Al-Ojairi at its core. Given Markaz’s values of trust and rooted fundamentals, we selected Dr. Saleh Al-Ojairi to personify these values as the brand’s spokesperson. Al-Ojairi is a local and regional public figure and astronomer who is renowned for his relentless quest for improving science and technology, and his work ethic is viewed with unwavering trust and admiration.',
     },
-    background: 'https://firebasestorage.googleapis.com/v0/b/test-codedesign.appspot.com/o/young-man-scene-min.jpg?alt=media&token=0e6981c4-8d43-436c-bea6-f5a2f34ba2af',
+    background: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Falmarkaz%2Fyoung-man-scene-min.jpg?alt=media&token=fa9c0cd8-2ef3-4e79-940f-0e0036d8d078',
     path: 'markaz',
     video: {
         main: 'https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/portfolio%2Falmarkaz%2FMARKAZ_2016.mp4?alt=media&token=05978500-22bd-4532-af84-96416956126e',
