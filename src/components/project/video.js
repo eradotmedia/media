@@ -136,6 +136,9 @@ class Video extends Component {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            display: '-webkit-flex',
+            WebkitJustifyContent: 'center',
+            WebkitAlignItems: 'center',
             width: '100%',
         };
         return (

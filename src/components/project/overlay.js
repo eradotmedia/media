@@ -8,10 +8,14 @@ class Overlay extends Component {
         const textCol = {
             position: 'fixed',
             display: 'flex',
+            display: '-webkit-flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
             justifyContent: 'center',
-        }
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'flex-start',
+            WebkitJustifyContent: 'center',
+        };
 
         const iconCol = {
             position: 'fixed',
@@ -19,31 +23,48 @@ class Overlay extends Component {
             flexDirection: 'column',
             alignItems: 'flex-end',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'flex-end',
+            WebkitJustifyContent: 'center'
+        };
+
+        const paragraphRow = {
+            display: '-webkit-flex',
+        };
 
         const paragraph = {
-            writingMode:'tb-rl',
+            writingMode: 'vertical-rl',
+            MozWritingMode: 'vertical-rl',
+            WebkitTransform: 'rotate(180deg)',
+            WebkitWritingMode: 'vertical-rl',
             transform: 'rotate(180deg)',
             textTransform: 'lowercase',
             fontFamily: 'Agaramond Bold',
             color: '#0A2037',
-        }
+        };
 
         const icon = {
             listStyle: 'none',
             display: 'flex',
             flexDirection: 'column',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
             margin: '0',
             color: 'black',
-        }
+        };
 
         const socialRow = {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+            WebkitJustifyContent: 'center',
             paddingBottom: '25px',
-        }
+        };
 
         return (
             <div>
@@ -53,25 +74,25 @@ class Overlay extends Component {
                             {this.renderSocialIcons(socialList)}
                         </ul>
                     </div>
-                    <div className="row">
+                    <div className="row" style={paragraphRow}>
                         <p style={paragraph}>{this.props.data.project}</p>
                     </div>
-                    <div className="row">
+                    <div className="row" style={paragraphRow}>
                         <p style={paragraph}>|</p>
                     </div>
-                    <div className="row">
+                    <div className="row" style={paragraphRow}>
                         <p style={paragraph}>{this.props.data.client}</p>
                     </div>
-                    <div className="row">
+                    <div className="row" style={paragraphRow}>
                         <p style={paragraph}>|</p>
                     </div>
-                    <div className="row">
+                    <div className="row" style={paragraphRow}>
                         <p style={paragraph}>era.media</p>
                     </div>
                 </div>
                 <div className="col-md-1 project-overlay-right" style={iconCol}>
-                    <div className="row">
-                        <ul style={icon} >
+                    <div className="row" style={paragraphRow}>
+                        <ul style={icon}>
                             {this.renderCapabilityIcons(capability)}
                         </ul>
                     </div>
@@ -90,7 +111,7 @@ class Overlay extends Component {
         const icon = {
             padding: '20px 5px',
             color: '#0A2037',
-        }
+        };
 
         return (
             keys.map(function(element, index) {
@@ -112,7 +133,7 @@ class Overlay extends Component {
         const img = {
             width: '15px',
             height: '15px',
-        }
+        };
         return (
             keys.map(function(element, index) {
                 return (

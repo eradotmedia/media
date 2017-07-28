@@ -50,27 +50,30 @@ class Carousel extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
             padding: '20px',
             margin: '20px auto',
-        }
+        };
 
         const row = {
             margin: '0px',
             padding: '20px 0',
             width: '80%',
-        }
+        };
 
         const left = {
             position: 'absolute',
             top: '45%',
             left: '-5%',
-        }
+        };
 
         const right = {
             position: 'absolute',
             top: '45%',
             right: '-5%',
-        }
+        };
 
         return (
             <div className="container" style={container}>
@@ -84,6 +87,6 @@ class Carousel extends Component {
             </div>
         )
     }
-};
+}
 
 export default Carousel;

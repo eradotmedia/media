@@ -6,6 +6,6 @@ class SocialMedia extends Component {
             <a href={this.props.data.link} target="_blank"><img className="img-fluid" src={this.props.data.image} alt="social media" /></a>
         );
     }
-};
+}
 
 export default SocialMedia;

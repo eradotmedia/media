@@ -26,22 +26,25 @@ class Almarkaz extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         const socialContainer = {
             margin: '20px auto',
             padding: '20px 0',
-        }
+        };
 
         const row = {
             margin: 'auto',
             padding: '0px',
             width: '80%',
-        }
+        };
 
         const col = {
             padding: '10px',
-        }
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -72,6 +75,6 @@ class Almarkaz extends Component {
             </div>
         );
     }
-};
+}
 
 export default Almarkaz;

@@ -25,13 +25,19 @@ class Alroumi extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         const container = {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
+        };
 
         const row = {
             margin: '0px',
@@ -40,7 +46,10 @@ class Alroumi extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'center',
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -62,6 +71,6 @@ class Alroumi extends Component {
             </div>
         );
     }
-};
+}
 
 export default Alroumi;

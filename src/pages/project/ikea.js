@@ -26,7 +26,10 @@ class Ikea extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         const container = {
             padding: '30px 0',
@@ -34,7 +37,11 @@ class Ikea extends Component {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'center',
+            WebkitAlignItems: 'center',
+        };
 
         const row = {
             margin: '0',
@@ -44,18 +51,22 @@ class Ikea extends Component {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'space-between',
+            WebkitAlignItems: 'center',
+        };
 
         const col = {
             padding: '30px',
-        }
+        };
 
         const text = {
             fontFamily: 'Texta Book',
             fontSize: '2.0em',
             padding: '30px 0',
             textTransform: 'uppercase',
-        }
+        };
 
         return (
             <div className="container-fluid" style={fullwidthContainer}>
@@ -96,6 +107,6 @@ class Ikea extends Component {
             </div>
         );
     }
-};
+}
 
 export default Ikea;

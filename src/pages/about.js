@@ -13,28 +13,17 @@ class About extends Component {
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
+            WebkitAlignItems: 'center',
         };
 
         const container = {
             padding: '100px 30px',
             paddingTop: '150px',
         };
-        // const mainContainer = {
-        //     margin: '0',
-        //     padding: '0',
-        //     backgroundColor: 'RGBA(10, 32, 55, 1.00)',
-        //     height: '93vh',
-        //     color: '#FFFFFF',
-        //     display: 'flex',
-        //     flexDirection: 'row',
-        //     justifyContent: 'center',
-        //     alignItems: 'center',
-        // };
 
-        // const container = {
-        //     padding: '60px 190px',
-        //     paddingTop: '100px',
-        // };
         const h1 = {
             fontFamily: 'Texta Heavy',
             backgroundColor: 'transparent',

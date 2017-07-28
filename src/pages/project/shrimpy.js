@@ -25,7 +25,10 @@ class Shrimpy extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -38,6 +41,6 @@ class Shrimpy extends Component {
             </div>
         );
     }
-};
+}
 
 export default Shrimpy;

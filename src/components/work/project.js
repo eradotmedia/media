@@ -30,11 +30,16 @@ class Project extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-end',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'flex-end',
+        };
 
         const row = {
             display: 'flex',
             alignContent: 'flex-end',
+            display: '-webkit-flex',
+            WebkitJustifyContent: 'flex-end',
             width: 'inherit',
             margin: '0',
         };
@@ -45,6 +50,11 @@ class Project extends Component {
             justifyContent: 'flex-end',
             alignContent: 'flex-end',
             alignItems: 'flex-end',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'flex-end',
+            WebkitAlignContent: 'flex-end',
+            WebkitAlignItems: 'flex-end',
             margin: '15px',
             padding: '15px',
             color: '#fff',
@@ -80,6 +90,8 @@ class Project extends Component {
             listStyle: 'none',
             display: 'flex',
             flexDirection: 'column',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
             padding: '30px',
             width: '190px',
             textAlign: 'left',

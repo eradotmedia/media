@@ -25,7 +25,10 @@ class Header extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-end',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'flex-end',
+        };
 
         const container = {
             margin: '10px auto',
@@ -33,22 +36,25 @@ class Header extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
+        };
 
         const row = {
             padding: '15px 0px',
             width: '90%',
-        }
+        };
 
         const col = {
             padding: '15px',
-        }
+        };
 
         const heading = {
             fontFamily: 'Texta Heavy',
             lineHeight: '1.1em',
             margin: '0',
-        }
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>

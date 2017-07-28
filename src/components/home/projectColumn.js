@@ -25,14 +25,22 @@ class ProjectColumn extends Component {
             flexDirection: 'row',
             justifyContent: 'flex-end',
             alignContent: 'flex-end',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'flex-end',
+            WebkitAlignContent: 'flex-end',
+        };
 
         const row = {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-end',
             alignContent: 'flex-end',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'flex-end',
+            WebkitAlignContent: 'flex-end',
+        };
 
         const col = {
             display: 'flex',
@@ -40,11 +48,16 @@ class ProjectColumn extends Component {
             justifyContent: 'flex-end',
             alignItems: 'flex-end',
             alignContent: 'flex-end',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'flex-end',
+            WebkitAlignContent: 'flex-end',
+            WebkitAlignItems: 'flex-end',
             margin: '20px',
             padding: '20px',
             color: '#fff',
             textAlign: 'right',
-        }
+        };
 
         const heading = {
             backgroundColor: "#ED1C7F",
@@ -54,23 +67,23 @@ class ProjectColumn extends Component {
             padding: '5px 16px',
             margin: '2px',
             letterSpacing: '1px',
-        }
+        };
 
         const link = {
             fontFamily: 'Agaramond Regular',
             fontSize: '1.1em',
             textDecoration: 'none',
             letterSpacing: '1px',
-        }
+        };
 
         const arrow = {
             color: '#ED1C7F',
             fontSize: '28px',
             lineHeight: '26px',
             verticalAlign: 'text-top',
-        }
+        };
 
-        const url = `/${this.state.path}`
+        const url = `/${this.state.path}`;
 
         return (
             <div className="container" style={container}>

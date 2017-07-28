@@ -8,7 +8,7 @@ class Contact extends Component {
 
         this.state = {
             modal: false
-        }
+        };
 
         this.toggleModal = this.toggleModal.bind(this);
     }
@@ -26,25 +26,25 @@ class Contact extends Component {
             padding: '0',
             backgroundColor: 'RGBA(10, 32, 55, 1.00)',
             height: '100%',
-        }
+        };
 
         const container = {
             padding: '60px 30px',
-        }
+        };
 
         const row = {
             padding: '20px 0px',
-        }
+        };
 
         const col = {
             padding: '40px',
-        }
+        };
 
         const heading = {
             fontFamily: 'Texta Heavy',
             color: '#FFFFFF',
             letterSpacing: '1px',
-        }
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -69,6 +69,6 @@ class Contact extends Component {
             </div>
         );
     }
-};
+}
 
 export default Contact;

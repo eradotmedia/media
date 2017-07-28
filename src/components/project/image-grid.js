@@ -4,7 +4,9 @@ class ImageGrid extends Component {
     render() {
         const row = {
             margin: '50px',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDisplay: '-webkit-flex',
+        };
 
         return (
             <div className="container">
@@ -33,6 +35,6 @@ class ImageGrid extends Component {
             })
         );
     }
-};
+}
 
 export default ImageGrid;

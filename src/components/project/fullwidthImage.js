@@ -7,7 +7,7 @@ class FullWidthImage extends Component {
             background: `#fff url(${this.props.data}) no-repeat top center / cover`,
             height: '550px',
             width: '100%',
-        }
+        };
 
         return (
             <div className="container" style={container}>
@@ -15,6 +15,6 @@ class FullWidthImage extends Component {
             </div>
         );
     }
-};
+}
 
 export default FullWidthImage;

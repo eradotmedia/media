@@ -8,15 +8,15 @@ class Capabilities extends Component {
             margin: '0',
             padding: '0',
             backgroundColor: 'RGBA(10, 32, 55, 1.00)',
-        }
+        };
 
         const container = {
             padding: '100px 20px',
-        }
+        };
 
         const row = {
             padding: '20px',
-        }
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -33,6 +33,6 @@ class Capabilities extends Component {
             </div>
         );
     }
-};
+}
 
 export default Capabilities;

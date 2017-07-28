@@ -26,7 +26,10 @@ class Koc extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         return (
             <div className="container-fluid" style={container}>
@@ -42,6 +45,6 @@ class Koc extends Component {
             </div>
         );
     }
-};
+}
 
 export default Koc;

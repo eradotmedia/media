@@ -6,8 +6,11 @@ class Youtube extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
             padding: '20px 0',
-        }
+        };
 
         const row = {
             margin: '0px',
@@ -16,7 +19,10 @@ class Youtube extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'center',
+        };
         
         return (
             <div className="container" style={container}>
@@ -28,6 +34,6 @@ class Youtube extends Component {
             </div>
         );
     }
-};
+}
 
 export default Youtube;

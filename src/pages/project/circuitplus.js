@@ -24,7 +24,10 @@ class CircuitPlus extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -39,6 +42,6 @@ class CircuitPlus extends Component {
             </div>
         );
     }
-};
+}
 
 export default CircuitPlus;

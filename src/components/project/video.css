@@ -10,6 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
     opacity: 0;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -23,6 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: flex-end;
 }
 .control .btnPlay {
     padding: 15px;
@@ -93,6 +99,7 @@
     height: auto;
     background: transparent;
     flex-grow: 1;
+    -webkit-flex-grow: 1;
 }
 .progress-bar {
     background: transparent;
@@ -131,6 +138,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
 }
 .volume-control:hover .volumeBar{
     display: block;
@@ -165,6 +176,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
     margin: auto;
 }
 .play {

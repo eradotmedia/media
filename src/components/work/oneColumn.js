@@ -17,21 +17,21 @@ class OneColumn extends Component {
             margin: '0',
             width: '100%',
             height: '550px',
-        }
+        };
 
         const row = {
             margin: 'inherit',
             padding: 'inherit',
             width: 'inherit',
             height: 'inherit',
-        }
+        };
 
         const col = {
             margin: 'inherit',
             padding: 'inherit',
             width: 'inherit',
             height: 'inherit',
-        }
+        };
 
         return (
             <div className="container" style={container}>
@@ -43,6 +43,6 @@ class OneColumn extends Component {
             </div>
         );
     }
-};
+}
 
 export default OneColumn;

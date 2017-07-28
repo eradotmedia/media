@@ -6,8 +6,11 @@ class Image extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
             padding: '20px',
-        }
+        };
 
         const row = {
             margin: '0px',
@@ -16,7 +19,10 @@ class Image extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'center',
+        };
 
         return (
             <div className="container" style={container}>
@@ -26,6 +32,6 @@ class Image extends Component {
             </div>
         );
     }
-};
+}
 
 export default Image;

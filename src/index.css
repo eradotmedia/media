@@ -110,8 +110,8 @@ a:active {
 }
 
 .era-video {
-    padding: 0px;
-    margin: 0px auto;
+    padding: 0;
+    margin: 0 auto;
     display: block;
 }
 

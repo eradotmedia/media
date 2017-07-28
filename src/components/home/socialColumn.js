@@ -24,21 +24,29 @@ class SocialColumn extends Component {
             flexDirection: 'column',
             justifyContent: 'flex-end',
             alignContent: 'flex-start',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'flex-end',
+            WebkitAlignContent: 'flex-start',
+        };
 
         const row = {
             backgroundColor: 'RGBA(10, 32, 55, 0.70)',
-        }
+        };
 
         const col = {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-center',
             alignContent: 'space-between',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'flex-center',
+            WebkitAlignContent: 'space-between',
             padding: '25px',
             color: '#fff',
             textAlign: 'left',
-        }
+        };
 
         const paragraph = {
             fontFamily: 'Texta Book',
@@ -47,7 +55,7 @@ class SocialColumn extends Component {
             fontStyle: 'normal',
             padding: '0',
             margin: '0px 10px',
-        }
+        };
 
         return (
             <div className="container" style={container}>

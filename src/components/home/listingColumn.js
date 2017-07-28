@@ -13,33 +13,40 @@ class ListingColumn extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-        }
+        };
 
         const row = {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
             width: '95%',
             padding: '5px',
-        }
+        };
 
         const col = {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
             alignContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'space-around',
+            WebkitAlignContent: 'center',
             margin: '10px auto',
             padding: '15px',
             color: '#fff',
             textAlign: 'left',
-        }
+        };
 
         const paragraph = {
             fontFamily: 'Texta Heavy',
             letterSpacing: '1px',
             fontStyle: 'Italic',
             fontSize: '2.0em',
-        }
+        };
 
         const link = {
             fontFamily: 'Agaramond Bold',
@@ -48,7 +55,7 @@ class ListingColumn extends Component {
             color: 'white',
             fontSize: '1.8em',
             lineHeight: '1.0em',
-        }
+        };
 
         return (
             <div className="container" style={container}>

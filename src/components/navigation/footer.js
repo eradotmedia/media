@@ -6,44 +6,48 @@ class Footer extends Component {
             backgroundColor: '#0A2037',
             width: '100%',
             overflow: 'hidden',
-        }
+        };
         const container = {
             overflow: 'hidden',
             width: '100%',
             color: '#FFFFFF'
-        }
+        };
 
         const row = {
             color: '#FFFFFF',
             padding: '0 20px',
-        }
+        };
 
         const paragraph = {
             margin: '0',
-        }
+        };
 
         const textCol = {
             margin: '20px 0',
             display: 'flex',
             flexDirection: 'row',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
             color: '#FFFFFF',
             height: '25px',
             lineHeight: '25px',
-        }
+        };
 
         const socialCol = {
             margin: '20px 0',
             display: 'flex',
             flexDirection: 'row',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
             color: '#FFFFFF',
             height: '25px',
             lineHeight: '25px',
-        }
+        };
 
         const icon = {
             padding: '0 15px',
             color: '#FFFFFF'
-        }
+        };
 
         var year = new Date().getFullYear();
 

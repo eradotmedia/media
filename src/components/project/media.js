@@ -68,6 +68,6 @@ class Media extends Component {
             <div dangerouslySetInnerHTML={{__html: mediaHtml}}></div>
         );
     }
-};
+}
 
 export default Media;

@@ -24,7 +24,10 @@ class Equate extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'center',
+        };
 
         return (
             <div className="container-fluid" style={mainContainer}>
@@ -35,6 +38,6 @@ class Equate extends Component {
             </div>
         );
     }
-};
+}
 
 export default Equate;

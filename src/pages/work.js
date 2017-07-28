@@ -21,6 +21,6 @@ class Work extends Component {
             </div>
         );
     }
-};
+}
 
 export default Work;

@@ -16,6 +16,10 @@ class NavigationModal extends Component {
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
+            WebkitAlignItems: 'center',
         };
 
         const container = {
@@ -24,6 +28,10 @@ class NavigationModal extends Component {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'flex-start',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'center',
+            WebkitAlignItems: 'flex-start',
             padding: '50px 10px',
             margin: '5px',
             width: '90%',
@@ -35,6 +43,10 @@ class NavigationModal extends Component {
             flexDirection: 'row',
             justifyContent: 'flex-start',
             alignItems: 'flex-start',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'flex-start',
+            WebkitAlignItems: 'flex-start',
             width: 'inherit',
         };
 
@@ -42,6 +54,9 @@ class NavigationModal extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitAlignItems: 'flex-start',
             color: 'white',
             width: 'inherit',
         };
@@ -72,6 +87,6 @@ class NavigationModal extends Component {
             </div>
         );
     }
-};
+}
 
 export default NavigationModal;

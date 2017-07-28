@@ -18,14 +18,14 @@ class TwoColumn extends Component {
             background: '#fff',
             margin: '0',
             width: '100%',
-        }
+        };
 
         const col = {
             backgroundColor: '#ED1C7F',
             color: '#fff',
             height: '550px',
             padding: '0px',
-        }
+        };
 
         return (
             <div className="container" style={container}>
@@ -40,6 +40,6 @@ class TwoColumn extends Component {
             </div>
         );
     }
-};
+}
 
 export default TwoColumn;

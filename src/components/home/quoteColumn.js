@@ -22,47 +22,58 @@ class QuoteColumn extends Component {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-        }
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
+            WebkitAlignContent: 'center',
+        };
 
         const row = {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'row',
+            WebkitJustifyContent: 'center',
             width: '95%',
             padding: '5px',
-        }
+        };
 
         const col = {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
             alignContent: 'center',
+            display: '-webkit-flex',
+            WebkitFlexDirection: 'column',
+            WebkitJustifyContent: 'space-around',
+            WebkitAlignContent: 'center',
             margin: '10px auto',
             padding: '15px',
             color: '#fff',
             textAlign: 'left',
-        }
+        };
 
         const quote = {
             fontFamily: 'Texta Heavy',
             letterSpacing: '1px',
             fontStyle: 'Italic',
             fontSize: '2.6em',
-        }
+        };
 
         const name = {
             fontFamily: 'Texta Heavy',
             fontStyle: 'Italic',
             fontSize: '2.0em',
             color: '#0A2037',
-        }
+        };
 
         const position = {
             fontFamily: 'Texta Light',
             fontStyle: 'Italic',
             color: '#0A2037',
             fontSize: '2.0em',
-        }
+        };
 
         return (
             <div className="container" style={container}>
