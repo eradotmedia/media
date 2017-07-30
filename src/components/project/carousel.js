@@ -63,25 +63,14 @@ class Carousel extends Component {
             width: '80%',
         };
 
-        const left = {
-            position: 'absolute',
-            top: '45%',
-            left: '-5%',
-        };
-
-        const right = {
-            position: 'absolute',
-            top: '45%',
-            right: '-5%',
-        };
 
         return (
             <div className="container" style={container}>
                 <div className="row" style={row}>
                     <div className="col">
                         <img src={this.state.images[this.state.counter]} className="img-fluid" alt="responsive" />
-                        <i style={left} onClick={this.previousPhoto} className="fa fa-chevron-left fa-2x" aria-hidden="true" ></i>
-                        <i style={right} onClick={this.nextPhoto} className="fa fa-chevron-right fa-2x" aria-hidden="true" ></i>
+                        <i onClick={this.previousPhoto} className="fa fa-chevron-left fa-2x left-arrow" aria-hidden="true" ></i>
+                        <i onClick={this.nextPhoto} className="fa fa-chevron-right fa-2x right-arrow" aria-hidden="true" ></i>
                     </div>
                 </div>
             </div>
