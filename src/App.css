@@ -177,17 +177,24 @@ h3 {
     min-height: 400px;
 }
 .left-arrow {
-    position: absolute;
-    top: 45%;
     left: 0;
+    top: 45%;
     z-index: 1;
+    cursor: pointer;
+    position: absolute;
 }
 
 .right-arrow {
-    position: absolute;
     top: 45%;
     right: 0;
     z-index: 1;
+    cursor: pointer;
+    position: absolute;
+}
+
+.col {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
 }
 
 @media (min-width: 40em) {
@@ -280,20 +287,18 @@ h3 {
     }
 
     .left-arrow {
-        position: absolute;
-        top: 45%;
         left: -5%;
-        z-index: 1;
     }
 
     .right-arrow {
-        position: absolute;
-        top: 45%;
         right: -5%;
-        z-index: 1;
+    }
+
+    .col {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
-
 
 /* inherit height from parent */
 .carousel {
