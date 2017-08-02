@@ -32,6 +32,8 @@ class ThreeColumn extends Component {
             height: '400px',
             margin: 'inherit',
             padding: 'inherit',
+            paddingLeft: '0',
+            paddingRight: '0',
         };
 
         const col2 = {
@@ -55,6 +57,6 @@ class ThreeColumn extends Component {
             </div>
         );
     }
-};
+}
 
 export default ThreeColumn;

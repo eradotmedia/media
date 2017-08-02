@@ -26,17 +26,10 @@ class OneColumn extends Component {
             height: 'inherit',
         };
 
-        const col = {
-            margin: 'inherit',
-            padding: 'inherit',
-            width: 'inherit',
-            height: 'inherit',
-        };
-
         return (
             <div className="container" style={container}>
                 <div className="row" style={row}>
-                    <div className="col" style={col}>
+                    <div className="col one-column">
                         <Project data={this.state.data} />
                     </div>
                 </div>

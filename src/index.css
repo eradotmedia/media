@@ -173,6 +173,15 @@ textarea:-ms-input-placeholder {
     right: 25px;
 }
 
+.one-column {
+    margin: inherit;
+    padding: inherit;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: inherit;
+    height: inherit;
+}
+
 @media only screen and (min-width: 420px) and (max-width: 799px) {
     .capability-col {
         padding: 40px !important;
