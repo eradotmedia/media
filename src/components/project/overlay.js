@@ -102,26 +102,28 @@ class Overlay extends Component {
     };
 
     renderSocialIcons(socialList) {
-        let keys = Object.keys(socialList).map(item => socialList[item]);
+        if(typeof socialList !== 'undefined') {
+            let keys = Object.keys(socialList).map(item => socialList[item]);
 
-        const list = {
-            margin: '8px auto',
-        };
+            const list = {
+                margin: '8px auto',
+            };
 
-        const icon = {
-            padding: '20px 5px',
-            color: '#0A2037',
-        };
+            const icon = {
+                padding: '20px 5px',
+                color: '#0A2037',
+            };
 
-        return (
-            keys.map(function(element, index) {
-                return (
-                    <li key={index} style={list}>
-                        <a href={element.link} target="_blank" style={icon}><i className={element.className} aria-hidden="true"></i></a>
-                    </li>
-                );
-            })
-        );
+            return (
+                keys.map(function(element, index) {
+                    return (
+                        <li key={index} style={list}>
+                            <a href={element.link} target="_blank" style={icon}><i className={element.className} aria-hidden="true"></i></a>
+                        </li>
+                    );
+                })
+            );
+        }
     };
 
     renderCapabilityIcons(capability) {
