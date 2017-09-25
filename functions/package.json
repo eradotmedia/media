@@ -4,8 +4,7 @@
   "dependencies": {
     "firebase-admin": "~4.2.1",
     "firebase-functions": "^0.5.7",
-    "nodemailer": "^4.0.1",
-    "sendgrid": "^5.1.0"
+    "mailgun-js": "^0.13.1"
   },
   "private": true
 }
