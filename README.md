@@ -21,7 +21,28 @@ Run `npm start` for previewing.
 
 ## Deployment
 
-Run `npm run build` will build the app for production to the build folder.
+### Staging
+
+Run `npm run build-dev` will build the app for production to the build folder.
+
+Run `firebase use {app-name}` will set firebase's app name that we want to use.
 
 Run `firebase deploy` will push the build to firebase hosting.
 
+#### or
+
+Run `deploy-staging` will build the app for production to the build folder.
+
+**NOTE:** make sure that you set the `{app-name}` in the file `package.json` properly
+
+### Production
+
+Run `npm run build will build the app for production to the build folder.
+
+Run `firebase use era-media-a5d17` will set firebase's app name that we want to use.
+
+Run `firebase deploy` will push the build to firebase hosting.
+
+#### or
+
+Run `deploy-prod` will build the app for production to the build folder.

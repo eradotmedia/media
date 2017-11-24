@@ -10,12 +10,20 @@
         "destination": "/index.html"
       }
     ],
+    "redirects": [ {
+      "source" : "/portfolio",
+      "destination" : "https://firebasestorage.googleapis.com/v0/b/era-website-a5d17.appspot.com/o/public%2FERA_PORTFOLIO_Final_AUG29_Spread.pdf?alt=media&token=b2832c71-7f4d-44a7-a586-081a99d542ae",
+      "type" : 301
+    } ],
     "headers": [ {
       "source" : "**/*.@(jpg|jpeg|gif|png|svg|css|js)",
       "headers" : [ {
         "key" : "Cache-Control",
         "value" : "max-age=604800"
-      } ]
+      }, {
+          "key" : "Access-Control-Allow-Origin",
+          "value" : "*"
+        }]
     }]
   }
 }
